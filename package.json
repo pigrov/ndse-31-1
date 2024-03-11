@@ -5,9 +5,13 @@
     "name": "netology",
     "version": "1.0.0",
     "main": "date.js",
-    "devDependencies": {},
+    "devDependencies": {
+        "dotenv": "^16.4.5"
+    },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node weather.js",
+        "dev": "node -r dotenv/config weather.js"
     },
     "author": "",
     "license": "ISC",
